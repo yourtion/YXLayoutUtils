@@ -8,16 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		CB4AB73C1D06AB730040621B /* YXLayoutUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4AB73B1D06AB730040621B /* YXLayoutUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB4AB7471D06ABAA0040621B /* YXLayoutUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4AB73B1D06AB730040621B /* YXLayoutUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB4AB7381D06AB730040621B /* YXLayoutUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YXLayoutUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4AB7381D06AB730040621B /* YXLayoutUtils_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YXLayoutUtils_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4AB73B1D06AB730040621B /* YXLayoutUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLayoutUtils.h; sourceTree = "<group>"; };
 		CB4AB73D1D06AB730040621B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4AB74C1D06ABAA0040621B /* YXLayoutUtils_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YXLayoutUtils_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CB4AB7341D06AB730040621B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4AB7451D06ABAA0040621B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +47,8 @@
 		CB4AB7391D06AB730040621B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB4AB7381D06AB730040621B /* YXLayoutUtils.framework */,
+				CB4AB7381D06AB730040621B /* YXLayoutUtils_OSX.framework */,
+				CB4AB74C1D06ABAA0040621B /* YXLayoutUtils_iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,12 +73,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB4AB7461D06ABAA0040621B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4AB7471D06ABAA0040621B /* YXLayoutUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CB4AB7371D06AB730040621B /* YXLayoutUtils */ = {
+		CB4AB7371D06AB730040621B /* YXLayoutUtils_OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB4AB7401D06AB730040621B /* Build configuration list for PBXNativeTarget "YXLayoutUtils" */;
+			buildConfigurationList = CB4AB7401D06AB730040621B /* Build configuration list for PBXNativeTarget "YXLayoutUtils_OSX" */;
 			buildPhases = (
 				CB4AB7331D06AB730040621B /* Sources */,
 				CB4AB7341D06AB730040621B /* Frameworks */,
@@ -79,9 +97,27 @@
 			);
 			dependencies = (
 			);
-			name = YXLayoutUtils;
+			name = YXLayoutUtils_OSX;
 			productName = YXLayoutUtils;
-			productReference = CB4AB7381D06AB730040621B /* YXLayoutUtils.framework */;
+			productReference = CB4AB7381D06AB730040621B /* YXLayoutUtils_OSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB4AB7431D06ABAA0040621B /* YXLayoutUtils_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4AB7491D06ABAA0040621B /* Build configuration list for PBXNativeTarget "YXLayoutUtils_iOS" */;
+			buildPhases = (
+				CB4AB7441D06ABAA0040621B /* Sources */,
+				CB4AB7451D06ABAA0040621B /* Frameworks */,
+				CB4AB7461D06ABAA0040621B /* Headers */,
+				CB4AB7481D06ABAA0040621B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YXLayoutUtils_iOS;
+			productName = YXLayoutUtils;
+			productReference = CB4AB74C1D06ABAA0040621B /* YXLayoutUtils_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +146,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB4AB7371D06AB730040621B /* YXLayoutUtils */,
+				CB4AB7371D06AB730040621B /* YXLayoutUtils_OSX */,
+				CB4AB7431D06ABAA0040621B /* YXLayoutUtils_iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -123,10 +160,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB4AB7481D06ABAA0040621B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB4AB7331D06AB730040621B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4AB7441D06ABAA0040621B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,6 +277,7 @@
 		CB4AB7411D06AB730040621B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -244,6 +296,7 @@
 		CB4AB7421D06AB730040621B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -255,6 +308,46 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.YXLayoutUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CB4AB74A1D06ABAA0040621B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = YXLayoutUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.YXLayoutUtils;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CB4AB74B1D06ABAA0040621B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = YXLayoutUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.YXLayoutUtils;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -271,13 +364,22 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB4AB7401D06AB730040621B /* Build configuration list for PBXNativeTarget "YXLayoutUtils" */ = {
+		CB4AB7401D06AB730040621B /* Build configuration list for PBXNativeTarget "YXLayoutUtils_OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB4AB7411D06AB730040621B /* Debug */,
 				CB4AB7421D06AB730040621B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+		};
+		CB4AB7491D06ABAA0040621B /* Build configuration list for PBXNativeTarget "YXLayoutUtils_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4AB74A1D06ABAA0040621B /* Debug */,
+				CB4AB74B1D06ABAA0040621B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
